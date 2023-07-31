@@ -4,6 +4,15 @@ new_task_button = document.getElementById('new_task_button'),
 textarea=document.getElementById('textarea'),
 counter=0, tasks_array=[];
 
+if (localStorage.getItem('tasks')!=null && localStorage.getItem('tasks')!=''){
+    tasks_array = localStorage.getItem('tasks').split(',');
+    tasks_array.forEach(tasked =>{
+        counter+=1;
+        tasked = tasked.replace('RaZdElItEl1', ',');
+        tasked = tasked.replace('RaZdElItEl2', "'");
+        tasks_list.innerHTML += '<div class="task" id="taskdiv'+counter+'"><div class="task_text"><p id="value'+counter+'">'+tasked+'</p></div><button id="delete'+counter+'" onClick="deleteTask(this.id)">❌</button>';
+    });
+}
 
 new_task_button.onclick = function(){
     if (textarea.value==''){
@@ -12,10 +21,12 @@ new_task_button.onclick = function(){
         counter+=1;
         error_place.innerHTML = '';
         task = textarea.value;
-        tasks_array.push(task);
-        localStorage.setItem('tasks', tasks_array);
         textarea.value = '';
         tasks_list.innerHTML += '<div class="task" id="taskdiv'+counter+'"><div class="task_text"><p id="value'+counter+'">'+task+'</p></div><button id="delete'+counter+'" onClick="deleteTask(this.id)">❌</button>';
+        task = task.replace(',', 'RaZdElItEl1');
+        task = task.replace("'", 'RaZdElItEl2');
+        tasks_array.push(task);
+        localStorage.setItem('tasks', tasks_array);
     }
 }
 function deleteTask(id){
