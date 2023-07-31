@@ -1,22 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Roboto:ital,wght@1,300&display=swap');
 textarea{
+    font-family: 'Caveat', cursive;
+    font-size: 3vmin;
     resize: none;
     width: 40vmin;
-    height: 8vmin;
-    background-color: #e6f7e2;
-    color: #f9974c;
+    height: 10vmin;
     border-radius: 2vmin;
     border: 0vmin;
     padding-left: 0.7vmin;
+    margin-right: 1vmin;
 }
-.task_text{
+.textarea_light{
+    background-color: #e6f7e2;
+    color: #52303e;
+}
+.textarea_dark{
+    background-color: #0E2954;
+    color: #2E8A99;
+}
+.task_text_light{
+    font-family: 'Caveat', cursive;
+    font-size: 3vmin;
     width: 40vmin;
     background-color: #e6f7e2;
-    color: #f9974c;
+    color: #52303e;
     border-radius: 2vmin;
     padding-left: 1vmin;
     padding-right: 1vmin;
+    margin-right: 1vmin;
 }
-.task{
+.task_text_dark{
+    font-family: 'Caveat', cursive;
+    font-size: 3vmin;
+    width: 40vmin;
+    background-color: #0E2954;
+    color: #2E8A99;
+    border-radius: 2vmin;
+    padding-left: 1vmin;
+    padding-right: 1vmin;
+    margin-right: 1vmin;
+}
+.task_light{
     background-color: #AAC8A7;
     padding-top: 3vmin;
     padding-left: 2vmin;
@@ -29,10 +53,29 @@ textarea{
     margin-top: 1vmin;
     margin-bottom: 1vmin;
 }
-button{
-    background-color: #9FC088;
+.task_dark{
+    background-color: #1F6E8C;
+    padding-top: 3vmin;
+    padding-left: 2vmin;
+    padding-bottom: 3vmin;
+    padding-right: 2vmin;
+    display: flex;
+    flex-direction: row;
+    border: 0vmin;
     border-radius: 2vmin;
-
+    margin-top: 1vmin;
+    margin-bottom: 1vmin;
+}
+button{
+    font-family: 'Caveat', cursive;
+    font-size: 3vmin;
+    border-radius: 2vmin;
+}
+.button_light{
+    background-color: #9FC088;
+}
+.button_dark{
+    background-color: #84A7A1;
 }
 .main{
     width:70%;
@@ -41,4 +84,7 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+p{
+    word-wrap: break-word;
 }
