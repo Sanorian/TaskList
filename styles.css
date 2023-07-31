@@ -1,0 +1,44 @@
+textarea{
+    resize: none;
+    width: 40vmin;
+    height: 8vmin;
+    background-color: #e6f7e2;
+    color: #f9974c;
+    border-radius: 2vmin;
+    border: 0vmin;
+    padding-left: 0.7vmin;
+}
+.task_text{
+    width: 40vmin;
+    background-color: #e6f7e2;
+    color: #f9974c;
+    border-radius: 2vmin;
+    padding-left: 1vmin;
+    padding-right: 1vmin;
+}
+.task{
+    background-color: #AAC8A7;
+    padding-top: 3vmin;
+    padding-left: 2vmin;
+    padding-bottom: 3vmin;
+    padding-right: 2vmin;
+    display: flex;
+    flex-direction: row;
+    border: 0vmin;
+    border-radius: 2vmin;
+    margin-top: 1vmin;
+    margin-bottom: 1vmin;
+}
+button{
+    background-color: #9FC088;
+    border-radius: 2vmin;
+
+}
+.main{
+    width:70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
