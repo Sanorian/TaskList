@@ -88,3 +88,9 @@ button{
 p{
     word-wrap: break-word;
 }
+.body_light{
+    background-color: #F6F4EB;
+}
+.body_dark{
+    background-color: #241468;
+}

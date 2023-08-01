@@ -30,6 +30,8 @@ if (theme=='dark'){
         element.classList.remove('button_light');
         element.classList.add('button_dark');
         });
+    document.getElementById('body').classList.remove('body_light');
+    document.getElementById('body').classList.add('body_dark');
         }
 new_task_button.onclick = function(){
     if (textarea.value==''){
@@ -68,6 +70,8 @@ theme_change_button.onclick = function(){
             element.classList.remove('button_light');
             element.classList.add('button_dark');
             });
+        document.getElementById('body').classList.remove('body_light');
+        document.getElementById('body').classList.add('body_dark');
         localStorage.setItem('theme', 'dark');
         } else {
             textarea.classList.remove('textarea_dark');
@@ -84,7 +88,9 @@ theme_change_button.onclick = function(){
                 element.classList.remove('button_dark');
                 element.classList.add('button_light');
         });
-        localStorage.setItem('theme', 'light');
+            document.getElementById('body').classList.remove('body_dark');
+            document.getElementById('body').classList.add('body_light');
+            localStorage.setItem('theme', 'light');
         }
 }
 function deleteTask(id){
