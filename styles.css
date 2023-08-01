@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Roboto:ital,wght@1,300&display=swap');
 textarea{
     font-family: 'Caveat', cursive;
-    font-size: 3vmin;
+    font-size: 5vmin;
     resize: none;
     width: 40vmin;
     height: 10vmin;
@@ -20,7 +20,7 @@ textarea{
 }
 .task_text_light{
     font-family: 'Caveat', cursive;
-    font-size: 3vmin;
+    font-size: 5vmin;
     width: 40vmin;
     background-color: #e6f7e2;
     color: #52303e;
@@ -31,7 +31,7 @@ textarea{
 }
 .task_text_dark{
     font-family: 'Caveat', cursive;
-    font-size: 3vmin;
+    font-size: 5vmin;
     width: 40vmin;
     background-color: #0E2954;
     color: #2E8A99;
@@ -68,7 +68,7 @@ textarea{
 }
 button{
     font-family: 'Caveat', cursive;
-    font-size: 3vmin;
+    font-size: 5vmin;
     border-radius: 2vmin;
 }
 .button_light{
