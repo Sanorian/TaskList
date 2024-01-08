@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost:8080/styles">
     <link rel="stylesheet" href="styles.css">
     <title>ToDo List</title>
 </head>
-<body class="body_light" id="body">
-    <div class="main">
-        <button id="theme_change" class="button_light">Change Theme</button>
+<body class="body_light">
+    <main>
+        <button class="button_light" onclick="changeTheme()">Change Theme</button>
         <div id="error_place"></div>
         <div class="task_light">
             <textarea placeholder="Write new task here" id="textarea" class="textarea_light"></textarea>
-            <button id="new_task_button" class="button_light">Add new task</button>
+            <button id="new_task_button" class="button_light" onclick="addNewTask()">Add new task</button>
             </div>
             <div id="task_list"></div>
             </div>
         </div>
-    </div>
+    </main>
+<script src="http://localhost:8080/script"></script>
 <script src="app.js"></script>
 </body>
 </html>

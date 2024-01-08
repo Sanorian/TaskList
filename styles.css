@@ -77,7 +77,7 @@ button{
 .button_dark{
     background-color: #84A7A1;
 }
-.main{
+main{
     width:70%;
     margin-left: 15%;
     margin-right: 15%;
@@ -93,4 +93,8 @@ p{
 }
 .body_dark{
     background-color: #241468;
+}
+#error_place{
+    font-family: 'Caveat', cursive;
+    font-size: 3vmin;
 }
